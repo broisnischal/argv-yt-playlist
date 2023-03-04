@@ -1,0 +1,29 @@
+interface Person {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
+
+class Rectangle {
+  width: number;
+  height: number;
+
+  constructor(width: number, height: number) {
+    this.width = width;
+    this.height = height;
+  }
+
+  getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+const geometryBox = new Rectangle(10, 30);
+
+console.log(geometryBox.getArea());
+
+function addNumber(x: number, y: number): number {
+  return x + y;
+}
+
+// console.log(addNumber(2, 45));
